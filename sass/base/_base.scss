@@ -5,7 +5,34 @@
     padding: 0;
     box-sizing: inherit;
 }
- 
+
+ html {
+    // font-size: 10px; setting this to set inital state of rem. which means 1rem = 10px
+    // font-size: 100%; will be 16px
+
+    font-size: 62.5%; // will be 10px, and we do it this way if user changes the size
+
+    @include respond(phone){ // width < 600px
+        font-size: 50%;
+    }
+
+    @include respond(tab-land){ //width < 1200px 
+        font-size: 56.25%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(tab-port){ //width < 900px
+        font-size: 50%; //1 rem = 9px
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%; //1rem = 12, 12/16
+    }
+ }
+  
  body {
-    box-sizing: border-box; /*//padding and margin are not added to total width or height */
+    box-sizing: border-box; //padding and margin are not added to total width or height
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0;
+    }
  }

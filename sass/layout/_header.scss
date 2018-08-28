@@ -8,9 +8,12 @@
     background-size: cover; 
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    // triangle: clip-path: polygon(0 0, 200px 0, 100px 200px, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); // triangle: clip-path: polygon(0 0, 200px 0, 100px 200px, 0 0);
     position: relative;
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
      &__logo-box {
              position: absolute;
              top: 4rem;
@@ -20,10 +23,7 @@
          height: 3.5rem;
      }
      &__text-box {
-         position: absolute;
-         top: 40%;
-         left: 50%;
-         transform: translate(-50%, -50%);
+         @include centerer;
          text-align: center;
      }
  }

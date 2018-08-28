@@ -15,6 +15,11 @@
         display: block;
         color: inherit;
         transition: all .3s;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem ($color-black, .1); //x + y + blur + color 
@@ -53,6 +58,10 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+        @include respond(tab-port){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-label {
@@ -78,10 +87,7 @@
             height: 1rem;
             width: 1rem;
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include centerer;
             background-color: $color-primary;
             opacity: 0;
             transition: opacity .2s;
