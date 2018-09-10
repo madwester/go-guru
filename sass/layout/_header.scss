@@ -4,7 +4,7 @@
         to right bottom, 
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)), 
-        url(../img/hero.jpg);
+        url(../img/train-track.jpg);
     background-size: cover; 
     background-position: top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -15,15 +15,35 @@
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
      &__logo-box {
-             position: absolute;
-             top: 4rem;
-             left: 4rem;
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
      }
      &__logo {
-         height: 3.5rem;
+         height: 10rem;
      }
      &__text-box {
          @include centerer;
          text-align: center;
+         width: 80%;
      }
+     &__buttons {
+         display: inline-block;
+     }
+ }
+
+ .header-second {
+    position: relative;
+    background-color: $color-primary;
+    height: 13rem;
+
+    &__logo-box {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    &__logo {
+        height: 8rem;
+    }
  }

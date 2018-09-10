@@ -1,30 +1,34 @@
 .footer {
-    background-color: $color-grey-dark-3;
-    padding: 10rem 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $color-grey-light-1;
 
-    @include respond(tab-port){ 
-        padding: 8rem 0;
-    }
-
-    &__logo-box {
+    &__top {
+        background-color: $color-grey-footer-1;
         text-align: center;
-        margin-bottom: 8rem;
-        @include respond(tab-port){ 
-            margin-block-end: 6rem;
+        padding: 4rem 0;
+        a {            
+            i {
+                font-size: 2rem;
+                margin: .5rem;
+                transition: all .5s;
+                color: $color-white;
+                &:hover {
+                    transform: translateY(-.5rem);
+                    color: darken($color-white, 40%);
+                }
+            }
         }
     }
 
-    &__logo {
-        width: 15rem;
-        height: auto;
+    &__bottom {
+        background-color: $color-grey-footer-2;
+        padding: 1rem 0;
+
     }
 
     &__navigation {
-        border-top: 1px solid $color-grey-dark-1;
-        padding-top: 2rem;
         display: inline-block;
+        text-align: right;
         @include respond(tab-port){ 
             width: 100%;
             text-align: center;
@@ -37,8 +41,12 @@
 
     &__item {
         display: inline-block;
+        &:not(:first-child) {
+            padding-left: 1.5rem;
+        }
         &:not(:last-child) {
-            margin-right: 1.5rem;
+            border-right: 1px solid $color-white;
+            padding-right: 1.5rem;
         }
     }
 
@@ -46,27 +54,9 @@
         &:link,
         &:visited {
             color: $color-grey-light-1;
-            text-decoration: none; 
-            text-transform: uppercase;
+            text-decoration: none;
             display: inline-block;
             transition: all .2s;
-        }
-
-        &:hover,
-        &:active {
-            color: $color-primary;
-            box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            transform: rotate(5deg) scale(1.3);
-        }
-    }
-    &__copyright {
-        border-top: 1px solid $color-grey-dark-1;
-        padding-top: 2rem;
-        width: 80%;
-        float: right;
-        @include respond(tab-port){ 
-            width: 100%;
-            float: none;
         }
     }
 }

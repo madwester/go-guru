@@ -1,0 +1,70 @@
+.testimonials {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem 6rem 6rem 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    @include respond(tab-port){
+        width: 100%;
+        padding: 4rem 4rem 4rem 7rem;
+    }
+
+    @include respond(phone){
+        transform: skew(0);
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+  
+.carousel {
+    width: 80%;
+    display: flex;
+    margin: 0 auto 10rem auto;
+
+    &__control {
+        width: 10%;
+        text-align: center;
+    }
+
+    &__content {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+        position: relative;
+    }
+
+    &__item {
+        padding: 0 8rem;
+        display: inline-block;
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        &--main {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        &--name {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+
+    &__arrow {
+        font-size: 3rem;
+        color: $color-primary;
+        text-decoration: none;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+}

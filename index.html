@@ -3,72 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Natours | Exciting tours for adventurous people</title>
+        <title>Go Guru | An online platform for authentic local experiences </title>
     </head>
     <body>
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <!-- WHEN LABEL IS CLICKED, CHECKBOX WILL BE CHECKED -->
             <label for="navi-toggle" class="navigation__button" type="button" >
                 <span class="navigation__icon">&nbsp;</span>
             </label>
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Suppliers - Join us now</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Agent Portal</a></li>
+                    <li class="navigation__item"><a href="faq.html" class="navigation__link">FAQ</a></li>
                 </ul>
             </nav>
         </div>
         <header class="header">
             <div class="header__logo-box">
-                <img class="header__logo" src="img/logo-white.png" alt="logo">
+                <a href="index.html"><img class="header__logo" src="img/logo-white.png" alt="logo"></a>
             </div>
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">Outdoors</span>
-                    <span class="heading-primary--sub">is where life happens</span>
+                    <span class="heading-primary--main">Better the journey</span>
+                    <span class="heading-primary--sub">Sri Lanka</span>
                 </h1>
-                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+                <div class="header__buttons">
+                    <button class="app-btn"><img src="/img/apple-btn.png" alt="Apple store"></button>
+                    <button class="app-btn"> <img src="/img/google-btn.png" alt="Google Play"> </button>
+                </div>
             </div>
         </header>
 
         <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-xl">
-                    <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-sm">You're going to fall in love with nature</h3>
-                        <p class="paragraph">
-                            Saepe officia nobis natus voluptates, debitis reprehenderit tenetur in possimus molestias repellat reiciendis dolorum enim quidem.
-                        </p>
-                        <h3 class="heading-tertiary u-margin-bottom-sm">Live adventures like you never have before</h3>
-                        <p class="paragraph">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium vero deleniti nulla esse itaque, saepe officia nobis.
-                        </p>
-                        <a href="#" class="btn-text">
-                            Learn more &rarr;
-                        </a>
+            <section class="section-appinfo">
+                <div class="row appinfo">
+                    <div class="col-1-of-3">
+                        <img src="/img/mockup.png" alt="Mockup app">
                     </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-                            sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                            alt="Photo 1">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                        </div>
+                    <div class="col-2-of-3">
+                        <h2 class="heading-secondary u-margin-bottom-sm">Try our free app.</h2>
+                        <p class="paragraph u-margin-bottom-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eligendi est voluptates, dolorum illo tenetur necessitatibus voluptas nobis commodi eum quo sint fugiat odit minus voluptate quae laudantium sed adipisci. Ipsum eligendi est voluptates, dolorum illo tenetur necessitatibus voluptas nobis commodi eum quo sint fugiat odit minus voluptate quae laudantium sed adipisci.</p>
+                        <!--<div class="appinfo__buttons">
+                            <button class="app-btn"><img src="/img/apple-btn" alt="Apple store"></button>
+                            <button class="app-btn"> <img src="/img/google-btn.png" alt="Google Play"> </button>
+                        </div>-->
+                        <ul class="appinfo__list">
+                            <li class="appinfo__item">
+                                <a href="#" class="appinfo__link"><i class="appinfo__symbol fab fa-apple"></i> iPhone</a>
+                            </li>
+                            <li class="appinfo__item">
+                                <a href="#" class="appinfo__link"><i class="appinfo__symbol fab fa-android"></i> Android</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -76,8 +69,8 @@
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-sm">Explore the world</h3>
+                            <i class="feature-box__icon icon-basic-elaboration-message-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-sm">Local advice</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla eos debitis.
                             </p>
@@ -85,8 +78,8 @@
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-sm">Meet nature</h3>
+                            <i class="feature-box__icon icon-basic-elaboration-smartphone-pencil"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-sm">Flexible</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla eos debitis.
                             </p>
@@ -94,8 +87,8 @@
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-map"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-sm">Find your way</h3>
+                            <i class="feature-box__icon icon-basic-elaboration-calendar-check"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-sm">Simple</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla eos debitis.
                             </p>
@@ -103,8 +96,8 @@
                     </div>
                     <div class="col-1-of-4">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-sm">Live a healthier life</h3>
+                            <i class="feature-box__icon icon-ecommerce-creditcard"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-sm">Safe & secure</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla eos debitis.
                             </p>
@@ -112,107 +105,16 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours" id="section-tours">
-                <div class="u-center-text u-margin-bottom-xl">
-                    <h2 class="heading-secondary">Most popular tours</h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front card__side--front--1">
-                                <div class="card__picture card__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>   
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 day tours</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back--1">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$279</p>
-                                    </div>
-                                    <a href="#popup-box" class="btn btn--white">Book now</a>
-                                </div>
-                            </div>
-                        </div>
+            <section class="section-about">
+               <div class="row about">
+                    <h2 class="heading-secondary u-margin-bottom-sm">Get to know us</h2>
+                    <div class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste distinctio error obcaecati? Totam, cupiditate sequi? Mollitia quae dolorum ex ut. Molestiae ipsum quos corporis provident voluptas amet ea voluptatum. <br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste distinctio error obcaecati? Totam, cupiditate sequi? Mollitia quae dolorum ex ut. Molestiae ipsum quos corporis provident voluptas amet ea voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br><br>Saepe iste distinctio error obcaecati? Totam, cupiditate sequi? Mollitia quae dolorum ex ut. Molestiae ipsum quos corporis provident voluptas amet ea voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste distinctio error obcaecati? Totam. <br><br>Cupiditate sequi? Mollitia quae dolorum ex ut. Molestiae ipsum quos corporis provident voluptas amet ea voluptatum.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe iste distinctio error obcaecati? Totam, cupiditate sequi? Mollitia quae dolorum ex ut. Molestiae ipsum quos corporis provident voluptas amet ea voluptatum.
                     </div>
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front card__side--front--2">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">The forest hiker</span>   
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>7 day tours</li>
-                                        <li>Up to 40 people</li>
-                                        <li>6 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: medium</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back--2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$279</p>
-                                    </div>
-                                    <a href="#popup-box" class="btn btn--white">Book now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front card__side--front--3">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">The Sea Explorer</span>   
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>5 day tours</li>
-                                        <li>Up to 15 people</li>
-                                        <li>3 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: hard</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back--3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                        <p class="card__price-value">$279</p>
-                                    </div>
-                                    <a href="#popup-box" class="btn btn--white">Book now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                <div class="u-center-text u-margin-top-lg">
-                    <a href="#" class="btn btn--green">Discover all tours</a>
-                </div>
+                    <button class="btn btn--green">Contact us</button>
+               </div>
             </section>
-            <section class="section-stories">
+            <section class="section-testimonials">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
@@ -221,143 +123,105 @@
                             Youre browser is not supported!
                     </video>
                 </div>
-                <div class="u-center-text u-margin-bottom-xl">
-                    <h2 class="heading-secondary">We make people genuinely happy</h2>
+                <div class="u-center-text u-margin-bottom-md">
+                    <h2 class="heading-secondary">What people are saying</h2>
                 </div>
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
-                            <figcaption class="story__caption">Mary Smith</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-sm">
-                                I had the best week ever with my family
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, officia repudiandae necessitatibus maxime cum ipsam quisquam amet, sapiente autem cupiditate fugiat harum molestiae minus tenetur? Deserunt quod ducimus eaque. Similique?</p>
+                    <div class="carousel">
+                        <div class="carousel__control">
+                            <a href="#" class="carousel__arrow arrowL">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="story">
-                            <figure class="story__shape">
-                                <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
-                                <figcaption class="story__caption">Jack Wilson</figcaption>
-                            </figure>
-                            <div class="story__text">
-                                <h3 class="heading-tertiary u-margin-bottom-sm">
-                                    Wow my life is completely different now
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, officia repudiandae necessitatibus maxime cum ipsam quisquam amet, sapiente autem cupiditate fugiat harum molestiae minus tenetur? Deserunt quod ducimus eaque. Similique?</p>
+                        <div class="carousel__content" id="slideshow">
+                            <div class="carousel__item">
+                                <h3 class="carousel__item--main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusamus amet nam dicta culpa impedit accusantium nobis nostrum libero, expedita quia. Rem doloribus, minima iusto natus tenetur neque nam quod!</h3>
+                                <h4 class="carousel__item--name">James Smith</h4>
+                            </div>
+                            <div class="carousel__item hidden" style="display: none">
+                                <h3 class="carousel__item--main">Consectetur adipisicing elit. Porro accusamus amet nam dicta culpa impedit accusantium nobis nostrum libero, expedita quia. Rem doloribus, minima iusto natus tenetur neque nam quod!</h3>
+                                <h4 class="carousel__item--name">Sarah Jones</h4>
+                            </div>
+                            <div class="carousel__item hidden" style="display: none">
+                                <h3 class="carousel__item--main">Consectetur adipisicing elit. Porro accusamus amet nam dicta culpa impedit accusantium nobis nostrum libero, expedita quia. Rem doloribus, minima iusto natus tenetur neque nam quod!</h3>
+                                <h4 class="carousel__item--name">Jack Williams</h4>
+                            </div>
+                            <div class="carousel__item hidden" style="display: none">
+                                <h3 class="carousel__item--main">Consectetur adipisicing elit. Porro accusamus amet nam dicta culpa impedit accusantium nobis nostrum libero, expedita quia. Rem doloribus, minima iusto natus tenetur neque nam quod!</h3>
+                                <h4 class="carousel__item--name">Emily Brown</h4>
                             </div>
                         </div>
-                    </div>
-                    <div class="u-center-text u-margin-top-lg">
-                        <a href="#" class="btn-text">Read all stories</a>
+                        <div class="carousel__control">
+                            <a href="#" class="carousel__arrow arrowR">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </div>
                     </div>
             </section>
-            <section class="section-book">
+            <section class="section-contact">
+                <h2 class="heading-secondary u-white-text">Want to get in touch?</h2>
+                <h3 class="heading-tertiary u-margin-bottom-md u-white-text">We normally reply within 24 business hours.</h3>
+                
                 <div class="row">
-                    <div class="book">
-                        <div class="book__form">
+                    <div class="contact">
+                        <div class="contact__form">
                             <form action="#" class="form">
-                                    <div class="u-margin-bottom-md">
-                                        <h2 class="heading-secondary">Start booking now</h2>
+                                <div class="contact__row">
+                                    <div class="contact__column">
+                                        <div class="form__group">
+                                            <input type="text" id="name" class="form__input" placeholder="Full Name" required>
+                                            <label for="name" class="form__label">Full name</label>
+                                        </div>
+                                        <div class="form__group">
+                                            <input type="email" id="email" class="form__input" placeholder="Email address" required>
+                                            <label for="email" class="form__label">Email address</label>
+                                        </div>
+                                        <div class="form__group">
+                                            <input type="number" id="number" class="form__input" placeholder="Phone number" required>
+                                            <label for="number" class="form__label">Phone number</label>
+                                        </div>
                                     </div>
-                                <div class="form__group">
-                                    <input type="text" id="name" class="form__input" placeholder="Full Name" required>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="email" id="email" class="form__input" placeholder="Email address" required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
-                                <div class="form__group u-margin-bottom-md">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div>
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
+                                    <div class="contact__column">
+                                        <div class="form__group">
+                                            <textarea name="message" id="message" class="form__input" placeholder="Message" required></textarea>
+                                            <label for="message" class="form__label">Message</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
-                                </div>
+                                <button class="btn btn--green">Send Message &rarr;</button>
                             </form>
                         </div>
                     </div>
-                </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__logo-box">
-                <picture class="footer__logo">
-                    <!-- Setting different image per screen -->
-                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png, 2x" media="(max-width: 37.5rem)">
-                        <!-- Giving browser a choice to choose image -->
-                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
-                </picture>
-                
+            <div class="footer__top">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer__text">
+                            <p>&copy; 2018. Go Guru. </p>
+                            <p>Website by <a href="www.madwester.com" class="footer__link">madwester.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2 footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Company</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Contact us</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Careers</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Privacy Policy</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Terms</a>
-                            </li>
+                            <li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a></li>
+                            <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        Built by <a href="#" class="footer__link">Maddie</a> for an online course in Advanced CSS and SASS.  
-                    </p>
-                </div>
             </div>
         </footer>
-            <div class="popup" id="popup-box">
-                <div class="popup__content">
-                    <div class="popup__left">
-                        <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                        <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
-                    </div>
-                    <div class="popup__right">
-                        <a href="#section-tours" class="popup__close">&times;</a>
-                            <h2 class="heading-secondary u-margin-bottom-sm">Start booking now</h2>
-                            <h3 class="heading-tertiary u-margin-bottom-md">Important &ndash; Please read these terms before booking.</h3>
-                            <p class="popup__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <a href="#" class="btn btn--green">Book now</a>   
-                    </div>
-                </div>
-            </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                    crossorigin="anonymous">
-            </script>
-            <script src="js/smooth-scrolling.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src="js/carousel.js"></script>
     </body>
 </html>
 
