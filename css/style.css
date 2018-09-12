@@ -444,6 +444,18 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.faq-categories__list {
+  list-style: none; }
+  .faq-categories__list__item__link {
+    text-decoration: none; }
+
+.tabs__item {
+  display: none; }
+
+.activeTab {
+  display: block;
+  color: red; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
