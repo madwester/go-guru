@@ -569,7 +569,15 @@ body {
 .header-faq {
   position: relative;
   background-color: #0eb290;
-  height: 13rem; }
+  height: 13rem;
+  text-align: center; }
+  .header-faq__heading {
+    color: #fff;
+    font-family: "IM Fell English SC", serif;
+    font-size: 3.5rem;
+    padding-top: 3.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
   .header-faq__logo-box {
     position: absolute;
     top: 3rem;
@@ -798,4 +806,5 @@ body {
       padding: 10rem 0; } }
 
 .section-faq {
+  background-color: #f7f7f7;
   padding: 6rem; }

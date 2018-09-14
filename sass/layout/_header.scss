@@ -36,6 +36,16 @@
     position: relative;
     background-color: $color-primary;
     height: 13rem;
+    text-align: center;
+
+    &__heading {
+        color: $color-white;
+        font-family: $fell-english;
+        font-size: 3.5rem;
+        padding-top: 3.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 
     &__logo-box {
         position: absolute;
