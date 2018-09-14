@@ -31,7 +31,7 @@
   
  body {
     box-sizing: border-box; //padding and margin are not added to total width or height
-    padding: 3rem;
+    padding: 3rem!important;
     @include respond(tab-port) {
         padding: 0;
     }
