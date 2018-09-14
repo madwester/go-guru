@@ -444,9 +444,6 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
-body {
-  padding: 10rem; }
-
 .tabs {
   width: 20%;
   padding: 0 3rem 0 0; }
