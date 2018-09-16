@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
             var questionLink = getFirstChildWithTagName(faqQuestions[i], 'A');
             var id = getHash(questionLink.getAttribute('href'));
             questionLinks[id] = questionLink;
-            //console.log('questionLinks[id]', questionLinks[id]);
             answerDiv[id] = document.getElementById(id);
-            //console.log('answerDiv[id]', answerDiv[id]);
         }
     }
 

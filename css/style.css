@@ -453,7 +453,8 @@ body {
   .tabs__item {
     list-style: none;
     border-bottom: 1px solid #ececec;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
   .tabs__link {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -481,8 +482,8 @@ body {
   .faq-question__title {
     text-decoration: none;
     color: #000;
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 2.3rem;
+    font-weight: 400;
     margin: 2rem 0;
     text-decoration: none; }
     .faq-question__title--selected {
