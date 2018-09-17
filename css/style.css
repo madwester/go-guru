@@ -279,6 +279,10 @@ body {
   .app-btn:not(:last-child) {
     margin-right: 1rem; }
 
+@media (max-width: 75em) {
+  .appinfo__image {
+    width: 50%; } }
+
 .appinfo__list {
   list-style: none; }
 
@@ -292,6 +296,10 @@ body {
 .appinfo__symbol {
   margin-right: 1rem; }
 
+@media (max-width: 75em) {
+  .appinfo {
+    text-align: center; } }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -302,7 +310,9 @@ body {
   transition: all .3s; }
   @media (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 2rem;
+      max-width: 50rem;
+      margin: auto; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -343,11 +353,17 @@ body {
   .carousel__control {
     width: 10%;
     text-align: center; }
+    @media (max-width: 75em) {
+      .carousel__control {
+        width: 5%; } }
   .carousel__content {
     width: 80%;
     margin: 0;
     text-align: center;
     position: relative; }
+    @media (max-width: 75em) {
+      .carousel__content {
+        width: 90%; } }
   .carousel__item {
     padding: 0 8rem;
     display: inline-block;
@@ -359,6 +375,9 @@ body {
     .carousel__item--main {
       font-size: 2.5rem;
       margin-bottom: 2rem; }
+      @media (max-width: 37.5em) {
+        .carousel__item--main {
+          font-size: 2rem; } }
     .carousel__item--name {
       text-transform: uppercase;
       font-size: 2rem;
@@ -369,6 +388,9 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 0 1rem; }
+  @media (max-width: 75em) {
+    .carousel {
+      width: 90%; } }
 
 .bg-video {
   position: absolute;
@@ -389,6 +411,12 @@ body {
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 37.5em) {
+    .contact {
+      width: 80%;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 65%), url(../img/train-track.jpg);
+      background-size: cover; } }
   .contact__form {
     width: 70%;
     padding: 8rem; }
@@ -401,8 +429,14 @@ body {
   .contact__row {
     display: flex;
     margin-bottom: 2rem; }
+    @media (max-width: 37.5em) {
+      .contact__row {
+        flex-direction: column; } }
   .contact__column {
     width: 50%; }
+    @media (max-width: 37.5em) {
+      .contact__column {
+        width: 100%; } }
 
 .form__group:not(:last-child) {
   margin-bottom: .5rem; }
@@ -509,7 +543,6 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row-noflex {
-      max-width: 50rem;
       padding: 0 3rem; } }
   .row-noflex::after {
     content: "";
@@ -641,14 +674,18 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 75em) {
+    .navigation__button {
+      top: 6rem;
+      right: 6rem; } }
   @media (max-width: 56.25em) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .navigation__button {
-      top: 3.5rem;
-      right: 3.5rem; } }
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -718,6 +755,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
+  transition: opacity 1.2s ease;
+  -webkit-transition: 1.2s ease;
   opacity: 1; }
 
 .navigation__icon {
@@ -761,7 +800,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-appinfo {
-      padding: 20rem 0; } }
+      padding: 27rem 5rem 20rem 5rem; } }
 
 .section-features {
   margin-top: -10rem;
@@ -773,7 +812,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-features {
-      padding: 10rem 0; } }
+      padding: 15rem 0; } }
 
 .section-about {
   background-color: #f7f7f7;
@@ -781,7 +820,7 @@ body {
   margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0 10rem 0; } }
+      padding: 25rem 10rem 10rem 10rem; } }
 
 .about {
   text-align: center; }
@@ -794,9 +833,9 @@ body {
 .section-testimonials {
   position: relative;
   padding: 15rem 0; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .section-testimonials {
-      padding: 10rem 0; } }
+      padding: 14rem 0; } }
 
 .section-contact {
   padding: 10rem 0;

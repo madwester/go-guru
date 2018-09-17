@@ -31,6 +31,9 @@
     &__control {
         width: 10%;
         text-align: center;
+        @include respond(tab-land){
+            width: 5%;
+        }
     }
 
     &__content {
@@ -38,6 +41,9 @@
         margin: 0;
         text-align: center;
         position: relative;
+        @include respond(tab-land){
+            width: 90%;
+        }
     }
 
     &__item {
@@ -51,6 +57,9 @@
         &--main {
             font-size: 2.5rem;
             margin-bottom: 2rem;
+            @include respond(phone){
+                font-size: 2rem;
+            }
         }
         &--name {
             text-transform: uppercase;
@@ -67,4 +76,7 @@
         padding: 0 1rem;
     }
 
+    @include respond(tab-land){
+        width: 90%;
+    }
 }
