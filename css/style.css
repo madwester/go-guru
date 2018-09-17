@@ -350,20 +350,17 @@ body {
   width: 80%;
   display: flex;
   margin: 0 auto 10rem auto; }
+  @media (max-width: 75em) {
+    .carousel {
+      width: 90%; } }
   .carousel__control {
     width: 10%;
     text-align: center; }
-    @media (max-width: 75em) {
-      .carousel__control {
-        width: 5%; } }
   .carousel__content {
     width: 80%;
     margin: 0;
     text-align: center;
     position: relative; }
-    @media (max-width: 75em) {
-      .carousel__content {
-        width: 90%; } }
   .carousel__item {
     padding: 0 8rem;
     display: inline-block;
@@ -372,6 +369,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0; }
+    @media (max-width: 37.5em) {
+      .carousel__item {
+        padding: 0 3rem; } }
     .carousel__item--main {
       font-size: 2.5rem;
       margin-bottom: 2rem; }
@@ -388,9 +388,6 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 0 1rem; }
-  @media (max-width: 75em) {
-    .carousel {
-      width: 90%; } }
 
 .bg-video {
   position: absolute;

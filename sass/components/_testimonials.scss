@@ -27,13 +27,12 @@
     width: 80%;
     display: flex;
     margin: 0 auto 10rem auto;
-
+    @include respond(tab-land){
+        width: 90%;
+    }
     &__control {
         width: 10%;
         text-align: center;
-        @include respond(tab-land){
-            width: 5%;
-        }
     }
 
     &__content {
@@ -41,9 +40,6 @@
         margin: 0;
         text-align: center;
         position: relative;
-        @include respond(tab-land){
-            width: 90%;
-        }
     }
 
     &__item {
@@ -54,6 +50,9 @@
         left: 0; 
         right: 0; 
         bottom: 0; 
+        @include respond(phone){
+            padding: 0 3rem;
+        }
         &--main {
             font-size: 2.5rem;
             margin-bottom: 2rem;
@@ -74,9 +73,5 @@
         text-decoration: none;
         text-align: center;
         padding: 0 1rem;
-    }
-
-    @include respond(tab-land){
-        width: 90%;
     }
 }
