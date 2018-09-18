@@ -1,59 +1,14 @@
-var questionLinks = new Array();
-var answerDiv = new Array();
-
 document.addEventListener('DOMContentLoaded', function(){
-    var faqQuestions = document.getElementsByClassName('faq-question');
-    for(var i = 0; i<faqQuestions.length; i++){
-        if(faqQuestions[i].nodeName === 'DIV'){
-            var questionLink = getFirstChildWithTagName(faqQuestions[i], 'A');
-            var id = getHash(questionLink.getAttribute('href'));
-            questionLinks[id] = questionLink;
-            answerDiv[id] = document.getElementById(id);
-        }
-    }
-
-    //assign onclick events to the question links, and highlight the first one
-    var i = 0;
-    for(var id in questionLinks){
-        questionLinks[id].onclick = showQuestion;
-        questionLinks[id].onfocus = function(){
-            this.blur()
-        };
-        if(i === 0) questionLinks[id].className = "faq-question__title faq-question__title--selected";
-        i++;
-    }
-
-    //hide all content from start 
-    var i = 0;
-    for(var id in answerDiv){
-        if(i !== 0) answerDiv[id].className = 'faq-question__answer hide';
-            i++;
-    }
+    var questions = document.querySelectorAll('.faq-question__title');
+    questions.forEach(question =>  {
+        question.addEventListener('click', showQuestion)
+    });
 });
 
 function showQuestion(){
-    var selectedId = getHash(this.getAttribute('href'));
-    for(var id in answerDiv){
-        if(id === selectedId){
-            questionLinks[id].className = 'faq-question__title faq-question__title--selected';
-            answerDiv[id].className = 'faq-question__answer';
-        }
-        else {
-            questionLinks[id].className = 'faq-question__title';
-            answerDiv[id].className = 'faq-question__answer hide';
-        }
-    }
-    return false;
-}
-
-function getFirstChildWithTagName(element, tagName){
-    for(var i=0; i<element.childNodes.length; i++){
-        if(element.childNodes[i].nodeName == tagName) 
-        return element.childNodes[i];
-    }
-}
-
-function getHash(url){
-    var hashPos = url.lastIndexOf('#');
-    return url.substring(hashPos + 1);
+    document.querySelectorAll('.faq-question__answer').forEach(answer => {
+        answer.classList.add('hide');
+    });
+    var sibling = this.nextElementSibling;
+    sibling.classList.remove('hide');
 }

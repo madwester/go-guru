@@ -38,6 +38,9 @@
 .tabs-content__item.hide {
     display: none;
 }
+.seleted-link {
+    color: #fdbd5f;
+}
 .faq-question {
     margin-bottom: 3rem;
 
@@ -65,5 +68,8 @@
     }
 }
 .faq-question__answer.hide {
+    display: none;
+}
+.hide {
     display: none;
 }
