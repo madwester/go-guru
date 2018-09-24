@@ -417,17 +417,25 @@ body {
       background-size: cover; } }
   @media (max-width: 37.5em) {
     .contact {
-      width: 80%;
-      margin: 0 auto; } }
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 5px; } }
   .contact__form {
     width: 70%;
     padding: 8rem; }
     @media (max-width: 75em) {
       .contact__form {
-        width: 65%; } }
+        width: 75%; } }
     @media (max-width: 56.25em) {
       .contact__form {
         width: 100%; } }
+    @media (max-width: 56.25em) {
+      .contact__form {
+        padding: 6rem; } }
+    @media (max-width: 37.5em) {
+      .contact__form {
+        padding: 2rem; } }
   .contact__row {
     display: flex;
     margin-bottom: 2rem; }
@@ -559,8 +567,7 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row-noflex {
-      max-width: 90%;
-      padding: 0 3rem; } }
+      width: 90%; } }
   .row-noflex [class^="col-"] {
     float: left; }
     .row-noflex [class^="col-"]:not(:last-child) {
