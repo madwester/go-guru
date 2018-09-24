@@ -18,9 +18,16 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+        }
      }
      &__logo {
          height: 10rem;
+         @include respond(phone){
+             height: 8rem;
+         }
      }
      &__text-box {
          @include centerer;
