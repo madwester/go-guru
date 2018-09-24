@@ -8,17 +8,18 @@
     background-size: 100%;
     border-radius: $default-border-radius;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-
+    @include respond(tab-port){
+        background-image: linear-gradient(to right,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 100%,
+            transparent 65%),
+            url(../img/train-track.jpg
+        );
+        background-size: cover; 
+    }
     @include respond(phone){
         width: 80%;
         margin: 0 auto;
-        background-image: linear-gradient(to right,
-                                        rgba($color-white, .9) 0%,
-                                        rgba($color-white, .9) 100%,
-                                        transparent 65%),
-                                        url(../img/train-track.jpg
-                                        );
-    background-size: cover; 
     }
     &__form {
         width: 70%;
@@ -39,8 +40,12 @@
     }
     &__column {
         width: 50%;
+        @include respond(tab-port){
+            margin: 0 10px;
+        }
         @include respond(phone){
             width: 100%;
+            margin: 0;
         }
     }
 

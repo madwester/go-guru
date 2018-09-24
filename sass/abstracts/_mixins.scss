@@ -61,7 +61,7 @@ ORDER to make it responsive: Base + typograpg=hy > general layout + grid > page 
             @content;
         }
     }
-    @if $breakpoint == big-desktop {    // 1800px +
+    @if $breakpoint == big-desktop {    // 1800px + 
         @media (min-width: 112em){
             @content;
         }

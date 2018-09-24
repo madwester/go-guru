@@ -10,7 +10,10 @@
     @include respond(tab-port){
         padding: 2rem;
         max-width: 50rem;
-        margin: auto
+        margin: 0 20px;
+    }
+    @include respond(phone){
+        margin: 0 auto;
     }
 
     &__icon {
