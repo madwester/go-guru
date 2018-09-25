@@ -23,7 +23,7 @@
     }
 
     @include respond(tab-port){ 
-        padding: 15rem 0;
+        padding: 15rem 8rem;
     }
 }
 
@@ -51,7 +51,7 @@
     position: relative;
     padding: 15rem 0;
     @include respond(tab-land){
-        padding: 14rem 0;
+        padding: 10rem 0;
     }
 }
 

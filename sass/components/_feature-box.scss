@@ -8,12 +8,12 @@
     transition: all .3s;
 
     @include respond(tab-port){
-        padding: 2rem;
-        max-width: 50rem;
         margin: 0 20px;
+        padding: 2rem;
     }
     @include respond(phone){
         margin: 0 auto;
+        max-width: 35rem;
     }
 
     &__icon {
