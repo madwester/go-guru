@@ -614,7 +614,7 @@ body {
     @media (max-width: 37.5em) {
       .header__logo-box {
         top: 3rem;
-        right: 3rem; } }
+        left: 2rem; } }
   .header__logo {
     height: 10rem; }
     @media (max-width: 37.5em) {
