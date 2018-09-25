@@ -12,4 +12,5 @@ function showQuestion(){
     });
     var sibling = this.nextElementSibling;
     sibling.classList.remove('hide');
+    event.preventDefault();
 }
