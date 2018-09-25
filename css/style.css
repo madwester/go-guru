@@ -420,9 +420,8 @@ body {
   @media (max-width: 37.5em) {
     .contact {
       width: 100%;
-      margin: 0 auto;
-      padding: 2rem;
-      border-radius: 5px; } }
+      margin: 4rem auto 0 auto;
+      padding: 2rem; } }
   .contact__form {
     width: 70%;
     padding: 8rem; }
