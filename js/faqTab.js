@@ -17,6 +17,7 @@ function addTabClickEvent() {
         content.classList.add('hide');
     });
     document.getElementById(selectedId).classList.remove('hide');
+    event.preventDefault();
 }
 
 

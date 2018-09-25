@@ -50,3 +50,10 @@
         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
     }
 }
+
+.row {
+    display: flex;
+    @include respond(phone){
+        flex-direction: column;
+    }
+}

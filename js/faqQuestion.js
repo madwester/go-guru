@@ -1,7 +1,8 @@
+
 document.addEventListener('DOMContentLoaded', function(){
     var questions = document.querySelectorAll('.faq-question__title');
     questions.forEach(question =>  {
-        question.addEventListener('click', showQuestion)
+        question.addEventListener('click', showQuestion);
     });
 });
 

@@ -1,6 +1,10 @@
 .tabs {
     width: 20%;
     padding: 0 3rem 0 0;
+    @include respond(phone){
+        width: 100%;
+        padding: 0 0 3rem 0;
+    }
     &__list {
     }
     &__item {
@@ -26,12 +30,16 @@
 .tabs-content {
     width: 80%;
     padding: 0 0 0 1.5rem;
+    @include respond(phone){
+        width: 100%;
+        padding: 1.5rem 0 0 0;
+    }
     &__item {
         &--title {
             font-size: 1.5rem;
             text-transform: uppercase;
             color: #fdbd5f;
-            margin-bottom: 2rem;
+            margin-bottom: 2rem; 
         }
     }
 }

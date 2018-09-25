@@ -1,4 +1,7 @@
 .section-faq {
     background-color: $color-grey-light-1;
     padding: 6rem;
+    &__heading {
+        text-align: center;
+    }
 }

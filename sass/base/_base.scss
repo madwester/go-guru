@@ -38,4 +38,7 @@
  }
  .row {
      display: flex;
+     @include respond(phone){
+         flex-direction: column;
+     }
  }
