@@ -51,12 +51,6 @@ body {
     body {
       padding: 0; } }
 
-.row {
-  display: flex; }
-  @media (max-width: 37.5em) {
-    .row {
-      flex-direction: column; } }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -464,13 +458,10 @@ body {
   border: 0;
   font-family: inherit;
   border-bottom: 3px solid transparent;
-  width: 90%;
+  width: 100%;
   display: block;
   color: inherit;
   transition: all .3s; }
-  @media (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem #000, 0.1;

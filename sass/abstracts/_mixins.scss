@@ -46,8 +46,13 @@ ORDER to make it responsive: Base + typograpg=hy > general layout + grid > page 
 */
 
 @mixin respond($breakpoint){
+    @if $breakpoint == xs-phone {
+        @media (max-width: 23.5em) {    // 0 - 376px
+            @content;
+        }
+    }
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) {    // 0 - 600px
+        @media (max-width: 37.5em) {    // 376 - 600px
             @content;
         }
     }

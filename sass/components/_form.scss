@@ -70,14 +70,10 @@ box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
         border: 0;
         font-family: inherit;
         border-bottom: 3px solid transparent;
-        width: 90%;
+        width: 100%;
         display: block;
         color: inherit;
-        transition: all .3s;
-
-        @include respond(tab-port){
-            width: 100%;
-        } 
+        transition: all .3s;  
 
         &:focus {
             outline: none;
