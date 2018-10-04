@@ -138,7 +138,8 @@ body {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem;
+      max-width: 40rem; } }
   .heading-secondary:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -298,35 +299,6 @@ body {
 
 .appinfo__symbol {
   margin-right: 1rem; }
-
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all .3s; }
-  @media (max-width: 56.25em) {
-    .feature-box {
-      margin: 0 20px;
-      padding: 2rem; } }
-  @media (max-width: 37.5em) {
-    .feature-box {
-      margin: 0 auto;
-      max-width: 35rem; } }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    background-image: linear-gradient(to right, #12e1b6, #0a836a);
-    -webkit-background-clip: text;
-    display: inline-block;
-    color: transparent; }
-    @media (max-width: 56.25em) {
-      .feature-box__icon {
-        margin-bottom: 0; } }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
 
 .feature {
   text-align: center; }
@@ -597,7 +569,7 @@ body {
     height: auto; }
     @media (max-width: 37.5em) {
       .printscreens__image {
-        width: 50%; } }
+        width: 70%; } }
   .printscreens__textbox {
     margin-top: 1rem;
     padding: 1rem; }
@@ -892,12 +864,15 @@ body {
   @media (max-width: 56.25em) {
     .section-appinfo {
       padding: 27rem 5rem 20rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .section-appinfo {
+      padding: 20rem 5rem 4rem 5rem; } }
 
 .section-feature {
   padding: 10rem 0 30rem 0; }
   @media (max-width: 37.5em) {
     .section-feature {
-      padding: 20rem 0 15rem 0; } }
+      padding: 4rem 0 25rem 0; } }
 
 .section-printscreens {
   margin-top: -10rem;
@@ -909,14 +884,14 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-printscreens {
-      padding: 15rem 8rem; } }
+      padding: 10rem 8rem; } }
 
 .section-about {
   background-color: #fff;
   padding: 15rem 0 10rem 0; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 5rem 5rem 5rem 5rem; } }
+      padding: 12rem 5rem 5rem 5rem; } }
 
 .about {
   text-align: center; }

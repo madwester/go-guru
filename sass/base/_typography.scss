@@ -61,6 +61,7 @@ body {
     }
     @include respond(phone){
         font-size: 2.5rem;
+        max-width: 40rem;
     }
     &:hover {
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);

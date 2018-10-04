@@ -33,7 +33,7 @@ var main = function() {
 			.end()
 			.appendTo('#slideshow');
 		};
-	}, 5000);
+	}, 10000);
    
 	
 };
