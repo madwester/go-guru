@@ -1,6 +1,23 @@
 .printscreens {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    @include respond(phone){
+        flex-direction: column;
+    }
+
+    &__item {
+        text-align: center;
+        @include respond(phone){
+            margin-bottom: 3rem;
+        }
+    }
+
     &__image {
-        width: 80%;
+        width: 70%;
         height: auto;
+        @include respond(phone){
+            width: 50%;
+        }
     }
 }

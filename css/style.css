@@ -576,9 +576,24 @@ body {
 .hide {
   display: none; }
 
-.printscreens__image {
-  width: 80%;
-  height: auto; }
+.printscreens {
+  display: flex;
+  width: 70%;
+  margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .printscreens {
+      flex-direction: column; } }
+  .printscreens__item {
+    text-align: center; }
+    @media (max-width: 37.5em) {
+      .printscreens__item {
+        margin-bottom: 3rem; } }
+  .printscreens__image {
+    width: 70%;
+    height: auto; }
+    @media (max-width: 37.5em) {
+      .printscreens__image {
+        width: 50%; } }
 
 .row-noflex {
   max-width: 114rem;
