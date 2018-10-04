@@ -711,14 +711,18 @@ body {
     background-color: #303B41;
     text-align: center;
     padding: 4rem 0; }
-    .footer__top a i {
-      font-size: 2rem;
-      margin: .5rem;
-      transition: all .5s;
-      color: #fff; }
-      .footer__top a i:hover {
-        transform: translateY(-0.5rem);
-        color: #999999; }
+  .footer__logobox {
+    margin-bottom: 2rem; }
+  .footer__logo {
+    width: 6rem; }
+  .footer__symbols a i {
+    font-size: 2rem;
+    margin: .5rem;
+    transition: all .5s;
+    color: #fff; }
+    .footer__symbols a i:hover {
+      transform: translateY(-0.5rem);
+      color: #999999; }
   .footer__bottom {
     background-color: #283035;
     padding: 1rem 0; }
@@ -893,7 +897,7 @@ body {
 .section-printscreens {
   margin-top: -10rem;
   padding: 20rem 0 22rem 0;
-  background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/Kegalle1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/Kegalle.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-printscreens > * {

@@ -1,11 +1,18 @@
 .footer {
     font-size: 1.2rem;
     color: $color-grey-light-1;
-
     &__top {
         background-color: $color-grey-footer-1;
         text-align: center;
         padding: 4rem 0;
+    }
+    &__logobox {
+        margin-bottom: 2rem;
+    }
+    &__logo {
+        width: 6rem;
+    }
+    &__symbols {
         a {            
             i {
                 font-size: 2rem;
