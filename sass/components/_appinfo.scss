@@ -1,24 +1,38 @@
 .appinfo {
+    
+    &__imagebox {
+        @include respond(tab-land){
+            text-align: center;
+        }
+    }
+
     &__image {
         @include respond(tab-land){
             width: 50%;
         }
     }
+
+    &__textbox {
+        @include respond(phone){
+            text-align: center;
+        }
+    }
+
     &__list {
         list-style: none;
     }
+
     &__item {
-        
         font-size: 1.8rem;
     }
+
     &__link {
         text-decoration: none;
         color: $color-primary;
     }
+    
     &__symbol {
         margin-right: 1rem;
-    }
-    @include respond(tab-land){
-        text-align: center;
-    }
+    } 
+    
 }

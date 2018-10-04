@@ -276,8 +276,16 @@ body {
     margin-right: 1rem; }
 
 @media (max-width: 75em) {
+  .appinfo__imagebox {
+    text-align: center; } }
+
+@media (max-width: 75em) {
   .appinfo__image {
     width: 50%; } }
+
+@media (max-width: 37.5em) {
+  .appinfo__textbox {
+    text-align: center; } }
 
 .appinfo__list {
   list-style: none; }
@@ -291,10 +299,6 @@ body {
 
 .appinfo__symbol {
   margin-right: 1rem; }
-
-@media (max-width: 75em) {
-  .appinfo {
-    text-align: center; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -584,16 +588,23 @@ body {
     .printscreens {
       flex-direction: column; } }
   .printscreens__item {
-    text-align: center; }
+    text-align: center;
+    padding: 5%; }
     @media (max-width: 37.5em) {
       .printscreens__item {
         margin-bottom: 3rem; } }
   .printscreens__image {
-    width: 70%;
+    width: 100%;
     height: auto; }
     @media (max-width: 37.5em) {
       .printscreens__image {
         width: 50%; } }
+  .printscreens__textbox {
+    margin-top: 1rem;
+    padding: 1rem; }
+  .printscreens__text {
+    color: #fff;
+    font-size: 1.6rem; }
 
 .row-noflex {
   max-width: 114rem;
@@ -881,8 +892,8 @@ body {
 
 .section-printscreens {
   margin-top: -10rem;
-  padding: 20rem 0 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/nat-4.jpg);
+  padding: 20rem 0 22rem 0;
+  background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/Kegalle1.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .section-printscreens > * {

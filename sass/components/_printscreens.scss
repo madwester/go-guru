@@ -8,16 +8,29 @@
 
     &__item {
         text-align: center;
+        padding: 5%;
         @include respond(phone){
             margin-bottom: 3rem;
         }
     }
 
+    &__imagebox {
+        
+    }
+
     &__image {
-        width: 70%;
+        width: 100%;
         height: auto;
         @include respond(phone){
             width: 50%;
         }
+    }
+    &__textbox {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    &__text {
+        color: $color-white;
+        font-size: 1.6rem;
     }
 }
