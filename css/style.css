@@ -576,6 +576,10 @@ body {
 .hide {
   display: none; }
 
+.printscreens__image {
+  width: 80%;
+  height: auto; }
+
 .row-noflex {
   max-width: 114rem;
   margin: 0 auto; }
@@ -860,16 +864,16 @@ body {
     .section-appinfo {
       padding: 27rem 5rem 20rem 5rem; } }
 
-.section-features {
+.section-printscreens {
   margin-top: -10rem;
-  padding: 30rem 0 20rem 0;
+  padding: 20rem 0 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
-  .section-features > * {
+  .section-printscreens > * {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
-    .section-features {
+    .section-printscreens {
       padding: 15rem 8rem; } }
 
 .section-about {
