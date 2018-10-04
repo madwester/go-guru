@@ -275,9 +275,8 @@ body {
   .app-btn:not(:last-child) {
     margin-right: 1rem; }
 
-@media (max-width: 75em) {
-  .appinfo__imagebox {
-    text-align: center; } }
+.appinfo__imagebox {
+  text-align: center; }
 
 @media (max-width: 75em) {
   .appinfo__image {
@@ -582,14 +581,14 @@ body {
 
 .printscreens {
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: 0 auto; }
   @media (max-width: 37.5em) {
     .printscreens {
       flex-direction: column; } }
   .printscreens__item {
     text-align: center;
-    padding: 5%; }
+    padding: 7%; }
     @media (max-width: 37.5em) {
       .printscreens__item {
         margin-bottom: 3rem; } }
@@ -902,7 +901,7 @@ body {
 
 .section-printscreens {
   margin-top: -10rem;
-  padding: 20rem 0 22rem 0;
+  padding: 10rem 0 8rem 0;
   background-image: linear-gradient(to right bottom, rgba(18, 225, 182, 0.8), rgba(10, 131, 106, 0.8)), url(../img/Kegalle.jpg);
   background-size: cover;
   transform: skewY(-7deg); }

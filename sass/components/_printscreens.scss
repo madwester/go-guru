@@ -1,6 +1,6 @@
 .printscreens {
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     @include respond(phone){
         flex-direction: column;
@@ -8,7 +8,7 @@
 
     &__item {
         text-align: center;
-        padding: 5%;
+        padding: 7%;
         @include respond(phone){
             margin-bottom: 3rem;
         }

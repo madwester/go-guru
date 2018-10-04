@@ -1,9 +1,7 @@
 .appinfo {
     
     &__imagebox {
-        @include respond(tab-land){
-            text-align: center;
-        }
+        text-align: center;
     }
 
     &__image {
@@ -30,7 +28,7 @@
         text-decoration: none;
         color: $color-primary;
     }
-    
+
     &__symbol {
         margin-right: 1rem;
     } 
