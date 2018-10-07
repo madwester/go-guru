@@ -1,5 +1,11 @@
 .feature {
     text-align: center;
+    &__row {
+        max-width: 100rem;
+        @include clearfix;
+        margin: 0 auto;
+    }
+
     &__imagebox {
         border-radius: 50%;
         background-color: $color-primary;
