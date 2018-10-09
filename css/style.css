@@ -877,10 +877,10 @@ body {
       padding: 20rem 5rem 4rem 5rem; } }
 
 .section-feature {
-  padding: 10rem 30rem 30rem 30rem; }
+  padding: 10rem 15rem 30rem 15rem; }
   @media (max-width: 75em) {
     .section-feature {
-      padding: 7rem 20rem 20rem 20rem; } }
+      padding: 7rem 15rem 20rem 15rem; } }
   @media (max-width: 56.25em) {
     .section-feature {
       padding: 0 10rem 20rem 10rem; } }
