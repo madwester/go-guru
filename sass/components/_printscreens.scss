@@ -9,6 +9,7 @@
     &__item {
         text-align: center;
         padding: 7%;
+        width: 100%;
         @include respond(phone){
             margin-bottom: 3rem;
         }
@@ -24,7 +25,7 @@
         @include respond(phone){
             width: 70%;
         }
-    }
+    } 
     &__textbox {
         margin-top: 1rem;
         padding: 1rem;

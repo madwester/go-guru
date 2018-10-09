@@ -567,7 +567,8 @@ body {
       flex-direction: column; } }
   .printscreens__item {
     text-align: center;
-    padding: 7%; }
+    padding: 7%;
+    width: 100%; }
     @media (max-width: 37.5em) {
       .printscreens__item {
         margin-bottom: 3rem; } }
@@ -897,7 +898,7 @@ body {
     transform: skewY(7deg); }
   @media (max-width: 56.25em) {
     .section-printscreens {
-      padding: 10rem 8rem; } }
+      padding: 10rem 4rem; } }
 
 .section-about {
   background-color: #fff;
